@@ -104,7 +104,7 @@ class Player(pygame.sprite.Sprite):
 class Rock(pygame.sprite.Sprite):
     def __init__(self, size, rock_group, x, y):
         super().__init__()
-        self.image = pygame.image.load("wall block tall.png")
+        self.image = pygame.image.load("wall_block_tall.png")
         self.image = pygame.transform.scale(self.image, size)
         self.rect = self.image.get_rect()
         rock_group.add(self)
@@ -152,7 +152,7 @@ class Enemy(pygame.sprite.Sprite):
         self.animation_row = 0
         self.animation_speed = 0.1
         self.movement_speed = 1
-        self.facing = random.choice(["left", "right"])-
+        self.facing = random.choice(["left", "right"])
         self.steps = random.randint(50, 100)
         self.movement_loop = 0
         self.x_change = 0
